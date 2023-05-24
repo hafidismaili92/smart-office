@@ -1,0 +1,40 @@
+#form-add-emp-container {
+	background-color: white;
+	border-radius: 25px;
+	min-height: 95vh;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+		rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+#form-add-emp-title {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 24px;
+	letter-spacing: -0.6px;
+	word-spacing: 2px;
+	color: #19273b;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+#form-add-emp-content {
+	padding: 20px 20px 0px 20px;
+}
+
+
+
+#add-emp-btns {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+#nouveau-employe-form label {
+	color: #1d2d437d !important;
+	font-weight: 700;
+}

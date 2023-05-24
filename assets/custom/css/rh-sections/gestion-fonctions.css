@@ -1,0 +1,251 @@
+#main-gestions-header {
+	text-align: left;
+	color: white;
+	height: 50px;
+	margin-top: 5px;
+	padding-top: 10px;
+	background: #141e30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#243b55,
+		#141e30
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#243b55,
+		#141e30
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#main-gestions-container {
+	margin-top: 10px;
+}
+#main-gestions-container .tab-content {
+	background-color: white;
+	padding: 20px 25px;
+	min-height: 95vh;
+}
+.header-tab {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0px;
+	align-items: center;
+	color: gray;
+	cursor: pointer;
+	font-size: 0.8em;
+	position: relative;
+	/* background-color: white;
+	border-right: 1px solid #ff000030; */
+}
+.header-tab i {
+	margin-bottom: 10px;
+}
+#main-gestions-container .nav-item {
+	width: 25%;
+	max-width: 150px;
+}
+
+#main-gestions-container table:not(.google-visualization-orgchart-table) {
+	width: 100%;
+	border-bottom: none;
+	background: #fbf7f7;
+	font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
+	color: #566787;
+	margin-bottom: 20px;
+}
+#main-gestions-container table:not(.google-visualization-orgchart-table) tr th {
+	border-bottom: 2px solid #ddd;
+	background-color: white;
+	color: #17a2b8;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	word-wrap: break-word;
+	border-bottom: 1px solid rgba(14 72 102, 0.12);
+}
+.dataTables_info {
+	color: #566787 !important;
+	font-size: calc(
+		12px + (14 - 12) * ((100vw - 300px) / (1600 - 300))
+	) !important;
+}
+#main-gestions-container
+	table:not(.google-visualization-orgchart-table)
+	tbody
+	td {
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
+	word-wrap: break-word;
+	word-break: break-all;
+	color: slategray;
+	border-bottom: 1px solid #9fb6c582;
+}
+#main-gestions-container a.paginate_button {
+	padding: 5px 6px !important;
+	height: 24px !important;
+	font-size: 11px !important;
+	line-height: 12px !important;
+}
+#main-gestions-container a.paginate_button:hover {
+	background: #f9bf1340;
+	color: black !important; /*change the hover text color*/
+	border: none !important;
+}
+
+/*below block of css for change style when active*/
+
+#main-gestions-container a.current {
+	border: 1px solid orange;
+	color: orange !important;
+	font-weight: bold !important;
+	margin: 2px 5px !important;
+	background: none;
+}
+#main-gestions-container
+	table:not(.google-visualization-orgchart-table)
+	tbody
+	tr:hover
+	td {
+	background-color: #51d20e61;
+}
+
+.header-tab.active {
+	background-color: white;
+
+	color: #1a283d;
+	font-weight: bold;
+	font-size: 13px;
+	height: 100%;
+}
+
+.nav-item a {
+	text-decoration: none;
+}
+
+.add-foncEntProf {
+	background-color: white;
+	padding: 0px 5px;
+	-webkit-box-shadow: 1px 1px 4px 0px rgba(26, 24, 24, 1);
+	-moz-box-shadow: 1px 1px 4px 0px rgba(26, 24, 24, 1);
+	box-shadow: 1px 1px 4px 0px rgba(26, 24, 24, 1);
+	border-radius: 6px;
+	padding: 0px 5px;
+	min-height: 80vh;
+}
+.fonctions-header-titles {
+	padding: 5px 10px;
+	background: #f85032; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#e73827,
+		#f85032
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#e73827,
+		#f85032
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	margin-bottom: 15px;
+	border-radius: 10px;
+	color: white;
+	width: 100%;
+
+	margin-top: -20px;
+}
+
+.fonctions-header-titles h5 {
+	letter-spacing: 3px;
+}
+
+table i.table-actions {
+	color: white;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	cursor: pointer;
+	margin: 3px;
+	text-align: center;
+}
+.google-visualization-orgchart-table {
+	border-collapse: separate !important;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+}
+#organigramme_div .google-visualization-orgchart-linebottom {
+	border-bottom: 1px solid gray;
+}
+
+#organigramme_div .google-visualization-orgchart-lineleft {
+	border-left: 1px solid gray;
+}
+
+#organigramme_div .google-visualization-orgchart-lineright {
+	border-right: 1px solid gray;
+}
+
+#organigramme_div .google-visualization-orgchart-linetop {
+	border-top: 1px solid gray;
+}
+.organigramme-block {
+	border: 1px solid #dddfdd;
+	background-color: white;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(212, 207, 197, 1);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(212, 207, 197, 1);
+	box-shadow: 1px 1px 2px 1px rgba(212, 207, 197, 1);
+}
+.organigramme-block.redborder {
+	border-top: 3px solid #e76f51;
+}
+.organigramme-block.blueborder {
+	border-top: 3px solid #264653;
+}
+.organigramme-block.greenborder {
+	border-top: 3px solid #2a9d8f;
+}
+.organigramme-block.cyanborder {
+	border-top: 3px solid #00ffff;
+}
+.organigramme-block.magentaborder {
+	border-top: 3px solid #8338ec;
+}
+
+.add-fn-form {
+	background-color: #fafafa;
+	padding: 30px 20px 10px 20px;
+	border-radius: 10px;
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+		rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	margin: 30px 0px;
+	border-bottom: 1px solid #d2e4ff;
+	position: relative;
+}
+.add-fn-form-title {
+	position: absolute;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	left: calc(50% - 125px);
+	top: -10px;
+	padding: 5px;
+	color: white;
+	background-color: #17a2b8;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.tab-items-container {
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.search-table-field {
+	flex-grow: 1;
+	height: 30px;
+	max-width: 150px !important;
+	min-width: 100px !important;
+	border-radius: 20px;
+	border: 1px solid lightgrey;
+}

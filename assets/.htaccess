@@ -1,0 +1,19 @@
+# bloquer l'acces a ce dossier directement 
+Order Allow,Deny
+Deny from all
+<FilesMatch ".*\.(js|json|css|php|map|png|tiff|svg|jpeg|jpg|gif|woff|ttf|woff2)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+#desactiver tout les CGI, donc desactiver 1 execution des script dans ce dossier 
+SetHandler none 
+SetHandler default-handler 
+Options -ExecCGI 
+php_flag engine off 
+<Files *>
+    SetHandler none
+    SetHandler default-handler
+    Options -Indexes
+    php_flag engine off
+    RemoveHandler .cgi .php .php3 .php4 .php5 .phtml .pl .py .pyc .pyo .js
+</Files>

@@ -1,0 +1,182 @@
+#taches-container
+{
+    background-color: none;
+    padding: 20px 15px 0px 15px;
+    margin-top: 15px;
+    overflow-y: scroll;
+    max-height: 100vh;
+    
+}
+#mission-detail-container
+{
+    background-color: none;
+    padding: 20px 15px 0px 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+.taches-card-body
+{
+    background-color: white;
+
+    padding: 20px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    border-radius: 6px;
+}
+.taches-header-titles
+{
+
+    top:-20px;
+    margin-top: -40px;
+    border-radius: 3px;
+    color: var(--whiteText);
+    font-size: var(--lg);
+    letter-spacing: 2px;
+}
+#taches-list
+{
+ background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding:20px;
+
+}
+#taches-details-list
+{
+   background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    padding:5px 20px;
+}
+
+#add-mission-list
+{
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding:5px 20px;
+}
+
+.sub-title
+{
+ font-family:  Roboto,Helvetica,Arial,sans-serif;
+ font-size: var(--sm);
+ margin: 0;
+
+}
+.detail-mission-item p
+{
+    margin:0;
+}
+.detail-mission-item
+{
+ border-bottom: 1px solid #f2f1f1;
+ font-size: var(--md);
+}
+.detail-mission-item .detail-mission-item-title
+{
+    font-size: var(--sm);
+}
+#table-taches-menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height:9vh;
+    min-height: 50px;
+    max-height: 80px;
+    padding-bottom:10px;
+}
+
+#taches-table
+{
+    width: 100%;
+    border-bottom: none;
+    background: #fbf7f7;
+    
+}
+#taches-table tr th, #taches-table tr td {
+
+    padding: 9px 15px;
+    vertical-align: middle;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: white;
+    border-bottom:1px solid #e9e9e9;
+}
+#taches-table tbody .labelTD
+{
+    white-space: normal;
+}
+#taches-table tr th
+{
+    color: #ff7c18;
+    text-align: center;
+    border-top: none !important;
+}
+#taches-table-container a.paginate_button
+{
+    padding: 5px 6px !important;
+    height: 24px !important;
+    font-size: 11px !important;
+    line-height: 12px !important;
+}
+#taches-table-container a.paginate_button:hover {
+
+    background: #f9bf1340;
+    color: black !important; /*change the hover text color*/
+    border: none !important;
+}
+
+
+/*below block of css for change style when active*/
+
+#taches-table-container  a.current {
+    border:1px solid orange;
+    color: orange !important;
+    font-weight: bold !important;
+    margin: 2px 5px !important;
+background:none;
+}
+/* width */
+#taches-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+#taches-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #e4dcdc; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+#taches-container::-webkit-scrollbar-thumb {
+  background: #d3d0d6; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#taches-container::-webkit-scrollbar-thumb:hover {
+  background: #cbcbcc; 
+}
+
+.detail-tache-item-content
+{
+    color: #cd8484;
+}
+#tache-detail-box
+{
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.tache-detail-box p
+{
+    margin-bottom: 0;
+}

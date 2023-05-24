@@ -1,0 +1,150 @@
+
+/*#Affaires table
+{
+	font-size: var(--sm);
+	border:none;
+}
+#Affaires table tbody td, #Affaires table thead th {
+	border: none !important;
+	word-wrap: break-word; 
+}
+#Affaires table td
+{
+	color:#7d7575;
+	padding: 8px 2px;
+}
+#Affaires table th 
+{
+	color: orange;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 4px 2px;
+}
+#Affaires .dataTables_scrollBody
+{
+	overflow: visible !important;
+}
+.addAff-toMap
+{
+	cursor: pointer;
+}
+.addAff-toMap:not(.shown)
+{
+	color: rgba(0,0,0,0.5);
+}
+.addAff-toMap.shown
+{
+	color:#16b7d5;
+}
+#Attachements table
+{
+	font-size: var(--sm);
+	border:none;
+}
+#Attachements table tbody td, #Attachements table thead th {
+	border: none !important;
+	word-wrap: break-word; 
+}
+#Attachements table td
+{
+	color:#7d7575;
+	padding: 8px 2px;
+}
+#Attachements table th 
+{
+	display: none;
+}
+#slidershow-modal .modal-header {
+  display:none;
+}
+#slidershow-modal .carousel-caption
+{
+	bottom: 0px;
+	left: 0px;
+	right: auto;
+}
+
+
+#colorpicker input.w1
+{
+	display: none;
+}*/
+#sidebar-menu table thead {
+    display: none;
+}
+#sidebar-menu table tbody td
+{
+	padding: 15px 10px;
+	border-top: 1px solid #f6f9fd;
+}
+.layerIcon-container
+{
+	margin-right: 10px;
+}
+.layerIcon-container img
+{
+	width: 18px;
+	height: 18px;
+
+}
+.layer-info ul
+{
+	list-style: none;
+	display: flex !important;
+}
+.layer-info ul li
+{
+	margin:0px 5px;
+	font-size: 12px;
+}
+.layer-action
+{
+	padding-right: 15px;
+}
+.layer-list-item
+{
+	display: flex;align-items: center;
+}
+.layerIcon-container
+{
+	padding: 6px;
+	border-radius: 100%;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropdown-menu
+{
+	min-width: 12rem;
+	padding: 15px;
+	font-size: 1em;
+	color:rgba(0,0,0,0.8);
+}
+.dropdown-menu.show {
+    position: absolute;
+    transform: translate3d(-195px, 0px, 0px);
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+}
+.dropdown-menu ul
+{
+	list-style: none;
+	padding: 0;
+}
+.dropdown-menu ul>li
+{
+	padding: 8px;
+	cursor: pointer;
+}
+.dropdown-menu li i
+{
+	margin-top: 4px;
+	float: right;
+	color: #2590b4;
+}
+.dropdown-menu li:hover, .dropdown-menu li:hover i
+{
+	
+	color: white;
+	background-color: #2590b4;
+}

@@ -1,0 +1,67 @@
+#nouvelleFacture-table
+{
+    width: 100%;
+    border-bottom: none;
+    background: #fbf7f7;
+    font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
+    color: #566787;
+    margin-top: 35px;
+}
+#nouvelleFacture-table tr th, #nouvelleFacture-table tr td {
+
+
+    vertical-align: middle;
+    word-wrap: break-word;
+    background-color: white;
+    border-bottom:1px solid #e9e9e9;
+}
+#nouvelleFacture-table tbody .labelTD
+{
+    white-space: normal;
+}
+#nouvelleFacture-table tr th
+{
+    border-bottom: 2px solid #ddd;
+    background-color: white;
+}
+#nouvelleFacture-table tr th
+{
+    color: #6b598f;
+    text-align: center;
+
+}
+#nouvellFacture-section a.paginate_button
+{
+    padding: 5px 6px !important;
+    height: 24px !important;
+    font-size: 11px !important;
+    line-height: 12px !important;
+}
+#nouvellFacture-section a.paginate_button:hover {
+
+    background: #f9bf1340;
+    color: black !important; /*change the hover text color*/
+    border: none !important;
+}
+
+
+/*below block of css for change style when active*/
+
+#nouvellFacture-section a.current {
+    border:1px solid orange;
+    color: orange !important;
+    font-weight: bold !important;
+    margin: 2px 5px !important;
+    background:none;
+}
+#nouvelleFacture-table tbody tr:hover td
+{
+
+background-color: #51d20e61;
+}
+
+
+
+
+
+

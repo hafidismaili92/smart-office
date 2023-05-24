@@ -1,0 +1,182 @@
+#affaires-table
+{
+	width: 100%;
+	border-bottom: none;
+
+	background: #fbf7f7;
+	
+}
+#affaires-table tr th, #affaires-table tr td {
+
+	padding: 9px 15px;
+	vertical-align: middle;
+	word-break: normal;
+    white-space: nowrap;
+}
+#affaires-table tr th{
+	border-bottom:2px solid #ddd;
+}
+#affaires-table tr td{
+	
+	border-bottom: 1px solid #e9e9e9;
+}
+#affaires-table tbody tr:nth-of-type(odd) {
+	background-color: #fcfcfc;
+}
+#affaires-table tbody tr:hover {
+	background: #007dfb05;
+}
+#affaires-table i.affaires-actions
+{
+	color: white;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	cursor: pointer;
+	margin: 3px;
+	text-align: center;
+}
+#affaires-tableContainer a.paginate_button
+{
+	padding: 10px 12px !important;
+	height: 34px !important;
+	font-size: 12px !important;
+	line-height: 14px !important;
+}
+#affaires-tableContainer a.paginate_button:hover {
+
+	background: #f9bf1340;
+	color: black !important; /*change the hover text color*/
+	border: none !important;
+}
+
+
+/*below block of css for change style when active*/
+
+#affaires-tableContainer  a.current {
+	background: #2980B9!important;
+	color: white !important;
+	font-weight: bold !important;
+	margin: 2px 5px !important;
+
+}
+#affaires-tableContainer
+{
+	
+	width: 100%;
+	font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1600 - 300))) ;
+	
+}
+
+#mesAffaires-section .btn-exportExcel {
+	color: white !important;
+	overflow: hidden;
+	background-color: #147109;
+	background-image: none !important;
+	text-align: center;
+	margin-left: 5px !important;
+}
+
+.mesAffaires-cards
+{
+	padding: 15px;
+	
+}
+.card-content 
+{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+	border-radius: 0px 0px 7px 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.card-content.global 
+{
+	border-bottom: 1px solid #00B4DB;
+}
+.card-content.success 
+{
+	border-bottom: 1px solid #17a68b;
+}
+.card-content.current 
+{
+	border-bottom: 1px solid #fd5b2c;
+}
+.card-content.warning
+{
+	border-bottom: 1px solid #ff4267;
+}
+.card-content p,.card-content h3
+{
+	text-align: right;
+}
+.card-icon
+{
+	position: absolute;
+	top:-25px;
+	left:10px;
+	padding: 20px;
+	border-radius: 5px;
+	
+	color: var(--clearWhiteBackground);
+}
+.mesAffaires-cards .global .card-icon
+{
+	background: #00B4DB;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.mesAffaires-cards .success .card-icon
+{
+	background: #11998e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.mesAffaires-cards .current .card-icon
+{
+	background: #FF512F;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mesAffaires-cards .warning .card-icon
+{
+	background: #FF416C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+#btns-group {
+	display: flex;
+	justify-content: flex-end;
+}
+#btns-group .btn{
+	padding: 3px 10px;
+	margin:0px 2px;
+
+}
+
+#table-menu
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height:15vh;
+	min-height: 120px;
+	max-height: 150px;
+	padding-bottom:10px;
+}
+#add-affaire-modal .modal-header
+{
+	background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+}
+
+

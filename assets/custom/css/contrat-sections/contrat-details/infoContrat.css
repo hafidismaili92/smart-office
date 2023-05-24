@@ -1,0 +1,73 @@
+.detail-contrat-item
+{
+	border-bottom: 1px solid #d3d6d3d9;
+	padding: 5px 0 5px 0;
+}
+.detail-contrat-item .col-2
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.detail-contrat-item-title
+{
+	margin-bottom: 0;
+	color: gray;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+}
+.detail-contrat-item-content
+{
+	margin-bottom: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	
+}
+.detail-contrat-icons
+{
+	color: gray;
+	line-height: 30px;
+	cursor: pointer;
+	text-align: center;
+	
+	
+}
+.download-fiche-contrat,.download-fiche-contrat:active,.download-fiche-contrat:visited
+{
+	color: #80a035 !important;
+    border-color: #80a035 !important;
+    outline:0;
+}
+
+.download-fiche-contrat:hover,.download-fiche-contrat:focus {
+    color: #fff !important;
+    background-color: #80a035 !important;
+    border-color: #80a035 !important;
+    outline:0;
+}
+.download-BP,.download-BP:active,.download-BP:visited
+{
+	color: #fd7d00 !important;
+    border-color: #fd7d00 !important;
+    outline:0;
+}
+
+.download-BP:hover,.download-BP:focus {
+    color: #fff !important;
+    background-color: #fd7d00 !important;
+    border-color: #fd7d00 !important;
+    outline:0;
+}
+.download-avancement,.download-avancement:active,.download-avancement:visited
+{
+	color: #a6373f !important;
+    border-color: #a6373f !important;
+    outline:0;
+}
+
+.download-avancement:hover,.download-avancement:focus {
+    color: #fff !important;
+    background-color: #a6373f !important;
+    border-color: #a6373f !important;
+    outline:0;
+}

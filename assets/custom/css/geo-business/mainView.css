@@ -1,0 +1,441 @@
+@import 'map.css';
+@import 'geoAffaires.css';
+/*@import 'geocomposantes.css';*/
+:root {
+	/*******************BACKROUND COLORS************************/
+	--clearWhiteBackground :white/*#fcfafa*/ ;
+	--clearGrayBackground:#f7f7f7;
+	--activeMenu:#141E30;
+	/*******************TEXT COLORS************************/
+	--whiteText : white;
+	--grayClearText : #3c4858;
+	--currentText:#62646a;
+	/*****************Font family************************/
+	--sansSerif : 'Helvetica Neue', Arial,sans-serif;
+	/*****************Font sizes************************/
+	--xs:0.7px;
+	--sm:0.8em;
+	--md:0.9em;
+	--xmd:1.2em;
+	--lg:1.4em;
+	--xl:1.6em;
+}
+html, body {
+height: 100%;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+section.main-sections
+{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	font-family: var(--sansSerif);
+	font-size: var(--md);
+	color: var(--currentText);
+	background-color: var(--clearGrayBackground);
+}
+#heading.hidden
+{
+	display: none;
+}
+.right-section.hidden
+{
+	display: none;
+}
+.draggable
+{
+	position:relative;
+	height: 100%;
+}
+
+.on-drag-view
+{
+	position: absolute;top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.6);width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: white;font-weight: bold;
+	border: 1px dashed #00e2ff;
+	pointer-events: none;
+}
+
+.loaderDialog
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index:11000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.loaderDialog.hidden
+{
+	display: none;
+}
+.loaderDialog>div
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+	background-color: white;
+	position: relative;
+}
+.loader:nth-child(1) {
+	border: 3px solid white; /* Light grey */
+	border-top: 3px solid red; /* Blue */
+	border-bottom: 3px solid red; /* Blue */
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background: none;
+	position: absolute;
+	left:5px;
+	top:5px;
+	animation: spinFirst 1s linear infinite;
+}
+.loader:nth-child(2) {
+	border: 2px solid white; /* Light grey */
+	border-bottom: 2px solid #008E9B; /* Blue */
+	border-top: 2px solid #008E9B; /* Blue */
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background: none;
+	position: absolute;
+	left:10px;
+	top:10px;
+	animation: spinSecond 1s linear infinite;
+}
+
+@keyframes spinFirst {
+	0% { transform: rotate(360deg); }
+	100% { transform: rotate(0deg); }
+}
+@keyframes spinSecond {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.custom-info-box
+{
+	position: fixed;
+	max-width: 350px;
+	min-width: 250px;
+	width: 30%;
+	padding:30px 10px;
+	z-index: 1000;
+	top:3vh;
+	left:3vw;
+	display: flex;
+	color: white;
+	border-radius: 15px;
+	opacity: 0.9;
+	z-index: 10000000 !important;
+	font-size: 1em;
+}
+.custom-info-box.error
+{
+	background: #ED213A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+.custom-info-box.success
+{
+	background: #11998e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+.custom-info-box.warning
+{
+	background: #f46b45;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-15%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.custom-info-box div
+{
+	flex-grow: 2;
+	
+}
+.custom-info-box i
+{
+	flex-grow: 1;
+	line-height: 1.5;
+	
+}
+
+
+/* Tooltip container */
+.customtooltip {
+	position: relative;
+	display: inline-block;
+}
+
+/* Tooltip text */
+.customtooltip  .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.customtooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.tab-sections .tab-section:not(.active)
+{
+	display: none;
+}
+.tab-sections
+{
+	
+	width: 100%;
+	padding: 15px;
+	flex-grow: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.tab-sections .form-row
+{
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.data-headers 
+{
+
+	width: 100%;
+	padding: 5px 0px;
+}
+.data-headers p
+{    
+	border-bottom: 1px solid #514e4e;
+	width: 100%;
+	background: #ff9d0026;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 0px;
+}
+.tree-points-menu
+{
+	cursor: pointer;
+	color:rgba(0,0,0,0.2);
+}
+.tree-points-menu:hover  {
+	color:red;
+}
+.dataTables_scrollBody
+{
+	border-bottom: none;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+	border-bottom: none;
+}
+.dataTables_scroll .dataTables_scrollHead
+{
+	border:none;
+}
+
+#sidebar {
+    z-index: 10000;
+    position: absolute;
+    width: 230px;
+    left: 0;
+    margin-left: 0px;
+    background: 0 0;
+    background-color: #fff;
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
+}
+#sidebar.hidden
+{
+	transform: translateX(-100%);
+}
+.marginOnSidebare,.marginOnRightSideBare,.right-sidebar,#sidebar
+{
+	transition: all ease-out .3s;
+}
+.marginOnSidebare.sideBarActif
+{
+	margin-left: 250px;
+}
+.right-sidebar {
+    z-index: 10000;
+    position: absolute;
+    width: 80%;
+    right: -80%;
+    top:60px;
+    bottom: 0px;
+    margin-left: 0px;
+    background: 0 0;
+    background-color: #fff;
+    
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    overflow-y:auto;
+}
+.marginOnRightSideBare.sideBarActif
+{
+	margin-right: calc(80% + 20px);
+}
+.right-sidebar.shown
+{
+	transform: translateX(-100%);
+}
+@media (min-width: 991.98px) 
+{
+	#sidebar {
+    width: 400px;
+}
+.right-sidebar {
+	width: 45%;
+	right: -45%;
+
+}
+.marginOnSidebare.sideBarActif
+{
+	margin-left: 420px;
+}
+.marginOnRightSideBare.sideBarActif
+{
+	margin-right: calc(45% + 20px);
+}
+}
+
+.page-wrapper {
+    left: 0;
+	width: 100%;
+    margin-left: 0;
+}
+
+
+/***add field***/
+#attributes-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px 0px;
+	max-height: 150px;
+	overflow-y: auto;
+	border: 1px dotted rgb(96, 139, 168);*/
+}
+#attributes-container>*
+{
+	margin-bottom: 5px;
+}
+.champsView
+{
+	background:#2193b0;/* fallback for old browsers */
+	padding: 1px 10px 1px 5px;
+	margin-right: 10px;
+	color: red;
+	border:none;
+	border-radius: 5px;
+}
+.champsView label
+{
+	margin-right: 20px;
+	color: white;
+	margin-bottom: 0
+}
+.champsView .remove-champs-value
+{
+	cursor: pointer;
+}
+.form-section-header {
+    padding: 10px 10px;
+    background: #f3f1f1;
+}
+.right-sidebar-dataWrapper
+{
+	padding: 10px;
+}
+.form-group.row
+{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.custom-selector>div
+{
+	padding: 10px 0px;
+	border: none;
+	color: gray;
+	border-radius: 5px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	background-color: #e9edf0;
+}
+.custom-selector>div img
+{
+	width: 30px;
+	height: 30px;
+}
+.custom-selector
+{
+	display: flex;
+	padding: 8px 30px;
+	justify-content: space-evenly;
+
+}
+
+.custom-selector>div.active
+{
+background-color: #d0e7ff;
+}
+.custom-selector div
+{
+	cursor: pointer;
+}
+#geom-selector .add-radio
+{
+	display: none;
+}
+#edit-mode-selector
+{
+	display: none;
+}
+
+
+
+
+
+
+
+
+

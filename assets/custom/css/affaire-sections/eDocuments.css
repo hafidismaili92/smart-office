@@ -1,0 +1,98 @@
+body,html
+{
+	height: 100%;
+}
+
+#eDocument-titleBorder
+{
+	border-top: 6px solid #005247;
+    width: 70px;
+    margin: 0 auto 50px;
+}
+.btnforumlaires
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 1.2em !important;
+	background: none;
+    border: 1px solid #a5b0c1;
+    color: #606060;
+    font-weight: bold;
+}
+.button-container 
+{
+	margin-bottom: 10px;
+	
+}
+.btnforumlaires:hover
+{
+	
+	color: #067e89;
+	cursor: pointer;
+	border:1px solid #067e89;
+}
+.group-container
+{
+	margin-bottom: 20px !important;
+}
+
+.card {
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+}
+
+.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #eee;
+    border-radius: .25rem;
+}
+.card {
+    font-size: .875rem;
+}
+.card [class*=card-header-]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {
+    border-radius: 3px;
+    margin-top: -20px;
+    padding: 15px;
+}
+
+.card .card-header-primary .card-icon, .card .card-header-primary .card-text, .card .card-header-primary:not(.card-header-icon):not(.card-header-text) {
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(156 39 176 / 40%);
+}
+
+.card .card-body {
+    padding: .9375rem 20px;
+    position: relative;
+}
+.card .card-body, .card .card-footer {
+    padding: .9375rem 1.875rem;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card [class*=card-header-] {
+    margin: 0 15px;
+    padding: 0;
+    position: relative;
+}
+
+
+
+

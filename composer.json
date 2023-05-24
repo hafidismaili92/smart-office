@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.15",
+        "gasparesganga/php-shapefile": "^3.3"
+    }
+}

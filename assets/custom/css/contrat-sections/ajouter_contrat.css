@@ -1,0 +1,106 @@
+
+#addContrat-section .wizard .content {
+    min-height: 100px;
+    background-color: white !important;
+    width: 100%;
+}
+#addContrat-section .wizard .content > .body {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    position: absolute;
+}
+#addContrat-section .wizard .content .body.current {
+    position: relative;
+}
+
+#addContrat-section .wizard > .steps a, #addContrat-section .wizard > .steps a:hover, .wizard > .steps a:active
+{
+    padding: 0.5em !important;
+    font-size: 12px;
+}
+
+#addContrat-section .wizard > .steps .current a
+{
+   background: #339cbb;  /* fallback for old browsers */
+
+    color: #fff;
+    cursor: default;
+    
+}
+#addContrat-section .wizard > .steps a
+{
+    font-size: 0.8em;
+}
+#addContrat-section .wizard > .steps .error a, #addContrat-section .wizard > .steps .error a:hover, #addContrat-section .wizard > .steps .error a:active {
+   background: #E44D26;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#addContrat-section .wizard > .actions a, .wizard > .actions a:hover, #addContrat-section .wizard > .actions a:active {
+ background:#339cbb;  /* fallback for old browsers */
+
+  color: #fff;
+    cursor: default;
+    font-size: 0.8em;
+}
+#addContrat-section .wizard > .actions .disabled a, #addContrat-section .wizard > .actions .disabled a:hover, #addContrat-section .wizard > .actions .disabled a:active {
+    background: #eee;
+    color: #aaa;
+}
+.form-section-header {
+    padding: 10px 10px;
+    background: #f3f1f1;
+}
+.wizard > .steps > ul > li {
+    width: auto !important;
+}
+.custom-info-box
+{
+    position: absolute;
+    max-width: 350px;
+    min-width: 250px;
+    width: 30%;
+    padding:30px 10px;
+    z-index: 1000;
+    bottom:3vh;
+    left:3vw;
+    display: flex;
+    color: white;
+    border-radius: 15px;
+    opacity: 1;
+    z-index: 10000000 !important;
+    font-size: 1em;
+}
+.custom-info-box.error
+{
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+.custom-info-box.success
+{
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+.custom-info-box.warning
+{
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
